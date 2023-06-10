@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-qgew
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/mvp-dev-nhpu-tenant/mvp-test-app/test-mvp-component-qgew@sha256:a42c87e96fb14df7791ecf8599a893754b716726b21d998a8b6394f9502ca45f
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
